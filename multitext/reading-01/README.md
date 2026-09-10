@@ -9,11 +9,17 @@ The passage is **Pizzi's reading 1 — Hushang**, 68 couplets in Pizzi's count, 
 Kayumars, the killing of the Black Div, the discovery of iron and fire, and the founding
 of the Sadeh festival.
 
-The same collation is offered in **two layouts**, and the two pages are otherwise
-identical in content:
+The same collation is offered in **two layouts**:
 
     index.html          translations as columns, beside the Persian
     index-bands.html    translations as bands, running between the couplet rows
+
+The two pages are generated from one source and are **identical except in how the
+translations are presented**. Same header and counts, same toolbar, same column chooser,
+same legend, same 76 rows in the same order, same treebank, same manuscript gallery, same
+script. Strip the translation columns from one and the translation bands from the other
+and the two files are byte-for-byte the same. Whatever the layout, the translation content
+is the same 105 chunks.
 
 Open either in a browser. No build step, no server, no dependencies beyond two webfonts.
 
@@ -56,7 +62,7 @@ and in what words.
 | **Mohl (Fr.)** | French, 1876 | running prose | — |
 
 **76 distinct couplets** across the six editions. **38 rows** have at least one gap,
-**45 rows** differ in wording, **8 couplets** are in one edition only.
+**43 rows** differ in wording, **8 couplets** are in one edition only.
 
 Reading the colours:
 
@@ -86,7 +92,16 @@ the couplet number stays pinned to the left edge.
 rows that carry information; both hide the section headings and the dependency trees.
 *Show all* restores everything.
 
-**Treebank** shows or hides the dependency trees under couplets 1–5.
+**Treebank** shows or hides the dependency trees under couplets 1–5 — six trees under
+each, one per edition.
+
+**Normalised orthography / Orthography as printed** switches the Persian between the
+normalised spelling the collation is computed on and the spelling each edition actually
+prints, so `وفرهنگ` and `و فرهنگ` can be seen as the same word or as two.
+
+**Choose your columns** works the same on both pages; the translations are the one
+thing the chooser handles differently, being columns on one page and a single
+*Translations* toggle on the other.
 
 **Light theme / Dark theme** switches the page between the two, whichever way your system
 is set; the choice is remembered in that browser between visits.
@@ -127,15 +142,27 @@ as-printed reading should go to those files rather than to the screen.
 
 ## The treebank
 
-Couplets 1–5 carry a Universal Dependencies annotation — 60 words with lemma, POS,
-morphological features, head and relation. It is drawn as arcs above the line, read right
-to left like the verse: each arc runs from head to dependent, the root is marked in gold,
-and the dashed rule divides the two hemistichs.
+Couplets 1–5 carry a Universal Dependencies annotation **in all six editions** — thirty
+sentences, 389 rows of lemma, POS, morphological features, head and relation. Each is
+drawn as arcs above the line, read right to left like the verse: each arc runs from head
+to dependent, the root is marked in gold, and the dashed rule divides the two hemistichs.
+Under each couplet the six editions are stacked in the table's own order, so a syntactic
+difference between editions can be read off directly.
 
-The annotation records things a parallel text alone cannot show: `نیایش` in couplet 4 is
-one written word but two syntactic ones (*niyā* + *-yaš*), and couplet 3 is a verbless
-clause whose copula is elided. Only these five couplets are annotated so far; the
-remaining 71 rows have no tree yet.
+Couplet 1 is the clearest case. Pizzi and Moscow print `خجسته سیامک`, so the adjective is
+`amod` onto a *following* proper noun; Vullers, Mohl, Macan and Khaleghi print
+`سیامک خجسته` and the same arc runs the other way. Nothing else in the syntax moves. The
+one further difference in that couplet is lexical, not syntactic: Moscow reads `جاه`
+(rank) where the rest read `جای` (place), in the same `obj` slot.
+
+The annotation also records what a parallel text alone cannot show. `نیایش` in couplet 4
+is one written word but two syntactic ones (*niyā* + *-yaš*); such multiword tokens are
+listed in CoNLL-U but are not drawn, since the tree is over syntactic words. Couplet 3 is
+a verbless clause whose copula is elided.
+
+**Only couplets 1–5 are annotated.** The remaining 71 rows have no tree in any edition.
+The underlying tables are `07-ud-pizzi-c1-5.csv` and `08-ud-all-editions-c1-5.csv` in the
+project archive; the SVGs in these pages are rendered from the second of them.
 
 ## How the translations are placed
 
@@ -237,6 +264,9 @@ on a consonant skeleton.
     index-bands.html    the viewer, translations as bands
     images/             11 manuscript images from Ganjoor, shared by both pages
     README.md           this file
+
+The two pages differ only in the translation layout; everything else in them is generated
+once and shared.
 
 The working data behind the page — the per-edition couplets, the 76 aligned slots, the
 transposition pairs, the transliteration alignment and the treebank — is not in this
