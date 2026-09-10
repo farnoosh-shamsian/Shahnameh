@@ -90,8 +90,9 @@ lines 90 and 96. Everything else is free of Cyrillic.
 **Capitalisation is inconsistent.** The text is otherwise lowercase throughout,
 including proper names — `rustam`, `firdavsī`, `kayqubād` — but words beginning
 with а/қ/ғ carry a capital in some places and not others, because the Cyrillic
-source capitalised them and the transliteration preserved that. `az` appears
-1,552 times and `Az` 270 times; `andar` 177 times and `Andar` 8. Genuine proper
+source capitalised them and the transliteration preserved that. Across the six
+volumes `az` appears 1,732 times and `Az` 259 times; `andar` 209 times and
+`Andar` 8. Genuine proper
 names in the same position, such as `Afrāsiýāb` and `Aynī`, are capitalised
 consistently and correctly.
 

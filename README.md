@@ -1,17 +1,36 @@
 # Shahnameh
-This is a transliteration derived from the Tajiki version of Shahnameh, in 6 volumes.
-I have added some titles in English using %%.
-The text includes aproximately the first half of Shahnameh, Corresponding to the first 4 books of Khaleghi's edition and few sections of book 5. This would be somewhere around the story of Goštasp and Katayun under the reign of Kay Lohrasp.
 
-## Multitext viewer
+Two things: a Latin-script transliteration of Ferdowsi's *Shahnameh* made from the
+Tajik Cyrillic edition, and a parallel-text reader for one passage of the poem.
 
-`multitext/` holds a parallel-text reader for one passage of the Shahnameh — Pizzi's
-reading 1, Hushang — setting six printed editions, the Tajik transliteration in this repo
-and three nineteenth-century translations side by side, one couplet per row, with each
-witness switchable on and off as a column. It comes in two layouts of the same collation:
-`multitext/shahnameh-reader-sample.html`, where the translations are columns beside the
-Persian, and `multitext/shahnameh-reader-sample2.html`, where they run as bands between
-the couplet rows. Open either in a browser; see the README beside them for what the
+## `shahnameh-transliteration/`
+
+The Tajik Cyrillic text, OCR'd and then transliterated by hand into Latin script
+following [the scheme](shahnameh-transliteration/transliteration-guide.md).
+
+Six volumes, 71,017 words, plus the editors' introduction. It is not the whole
+poem but roughly the first half, ending around the story of Goštasp and Katayun
+in the reign of Kay Lohrasp — about the first four volumes of Khaleghi-Motlagh's
+edition and a few sections of the fifth. `%%` marks the volume boundaries
+(`%%Shahnameh part 1%%` … `%%Shahnameh part 6%%`); there are no other added
+headings.
+
+See [its README](shahnameh-transliteration/README.md) for the file layout, the
+two spelling conventions that were deliberately not merged, and the known issues.
+
+## `multitext/`
+
+A parallel-text reader for one passage — Pizzi's reading 1, Hushang, 68 couplets
+— setting six printed Persian editions, the transliteration above and three
+nineteenth- and early-twentieth-century translations side by side, one couplet
+per row, with each edition switchable on and off. Two layouts of the same
+collation: [`shahnameh-reader-sample.html`](multitext/shahnameh-reader-sample.html),
+where the translations are columns beside the Persian, and
+[`shahnameh-reader-sample2.html`](multitext/shahnameh-reader-sample2.html), where
+they run as bands between the couplet rows. Open either in a browser.
+
+Four of the six editions were read off the scans by model OCR and are **not yet
+verified**. See [the README beside them](multitext/README.md) for what the
 columns are, how the alignment was made and how far the text can be trusted.
 
 ---

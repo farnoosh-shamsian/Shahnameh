@@ -1,7 +1,7 @@
 # A Shahnameh multitext — prototype
 
 A parallel-text reader for one passage of the *Shahnameh*: six printed editions, a Tajik
-transliteration in Latin script, and three nineteenth-century translations in one table.
+transliteration in Latin script, and three translations in one table.
 
 The passage is **Pizzi's reading 1 — Hushang**, 68 couplets in Pizzi's count, from
 `خجسته سیامک یکی پور داشت` to `نه نیز آشکارا نمایدت چهر` — the death of Kayumars, the
@@ -22,7 +22,7 @@ absence — the couplet is there, a few rows away.
 
 The two pages are generated from one source and are identical except in how the
 translations are presented. Open either in a browser: no build step, no server, no
-dependencies beyond two webfonts.
+dependencies beyond three webfonts (Noto Naskh Arabic, Spectral, IBM Plex Sans).
 
 ## Orthography
 
@@ -32,8 +32,9 @@ that is a variant reading, so comparison folds all of it away — spacing, ZWNJ,
 harakat, ezafe, letterforms, contractions — which takes the marks from 627 to **193**.
 
 **The text on screen is normalised**: each column is rewritten into one spelling, always
-one that another edition *in the same row* actually prints, never one invented here. 31 of
-the 76 rows then read identically across every edition that has them.
+one that another edition *in the same row* actually prints, never one invented here. 33 of
+the 76 rows then show no variation at all — 25 of them attested in more than one edition,
+the other 8 being the couplets only one edition carries.
 
 The diplomatic text, exactly as each edition prints it, is in `texts/01-pizzi.txt` …
 `texts/06-ganjoor-moscow.txt`. It is also still carried in the pages' markup, hidden.
@@ -45,7 +46,7 @@ Pizzi and Moscow/Ganjoor are existing digital transcriptions and the translitera
 from this repository. **Vullers, Mohl, Macan and Khaleghi were read off the scans by model
 vision OCR and are not yet verified** — a working text, not a citable edition. One strong
 check has passed: Vullers prints his own apparatus of what Mohl and Macan read, and every
-one of those roughly twenty notes is reproduced by transcriptions made independently from
+one of those twenty-seven notes is reproduced by transcriptions made independently from
 the scans.
 
 Translations are placed by section, and within a section by proportion of length. Section
@@ -70,20 +71,24 @@ Only couplets 1–5 carry a Universal Dependencies tree, over Pizzi's text
 | Khaleghi | Khaleghi-Motlagh | vol. 1, pp. 24–25, 29–31 |
 | Moscow | Moscow edition, via [Ganjoor](https://ganjoor.net/) | vol. 1, pp. 31–35 |
 
-Pizzi 1883, Vullers 1877–84, Mohl and Macan 1829 are nineteenth-century and in the public
-domain. The Khaleghi-Motlagh text is modern and is quoted here only in the short extent of
+Pizzi 1883, Vullers 1877–84, Mohl 1838–78 and Macan 1829 are nineteenth-century and in
+the public domain. The Khaleghi-Motlagh text is modern and is quoted here only in the short extent of
 this one passage, for comparison.
 
-**The translations** — Pizzi's Italian 1883, Warner's English 1905, Mohl's French 1876 —
-are all in the public domain.
+**The translations** — Pizzi's Italian 1883 and Mohl's French 1876, both nineteenth-century,
+and Warner's English 1905 — are all in the public domain.
 
-**The transliteration** of the Tajik Cyrillic is original to this project, the same text
-as `Shahnameh part 1.txt` in this repository.
+**The transliteration** of the Tajik Cyrillic is original to this project, the same passage
+as `shahnameh-transliteration/volumes/shahnameh-vol-1.txt` in this repository. Note that
+the text embedded in these pages is the *pre-correction* draft: it still carries the
+Cyrillic а/e homoglyphs that have since been cleaned out of the transliteration files.
+Take the corrected reading from `shahnameh-transliteration/`, not from these pages.
 
-**The manuscript images** are © their holding institutions and are served by
-[Ganjoor](https://museum.ganjoor.net/) from
-[ganjoor.net/ferdousi/shahname/qmars/sh2](https://ganjoor.net/ferdousi/shahname/qmars/sh2);
-each caption names its source and links to the item. They are included for scholarly
+**The manuscript images** are © their holding institutions. The eleven leaves were taken
+from [Ganjoor](https://museum.ganjoor.net/)'s museum pages for
+[ganjoor.net/ferdousi/shahname/qmars/sh2](https://ganjoor.net/ferdousi/shahname/qmars/sh2)
+and are copied into `images/` and served from this repository, not hotlinked; each caption
+names its source and links back to the item. They are included for scholarly
 comparison. If you reuse these pages, check the rights with the holding institutions
 rather than relying on their presence here.
 
