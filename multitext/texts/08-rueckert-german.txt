@@ -1,0 +1,101 @@
+# Reading 1 — RÜCKERT, German verse translation, printed pp. 6-7 and 9-11
+# BOOK: Firdosi's Königsbuch (Schahname), übersetzt von Friedrich Rückert, hrsg. von
+#   E. A. Bayer. Sage I-XIII. Berlin: Reimer, 1890.
+# PDF: translations/Rückert.pdf (Universitäts- und Landesbibliothek Sachsen-Anhalt,
+#   urn:nbn:de:gbv:3:5-10886), pdf pages 62-63 and 65-67 (offset +56).
+#   pdf p.64 is "Anmerkungen zu Sage I" and is not part of the reading.
+# OCR: model vision transcription from the Fraktur scan, 2026-09-10. UNVERIFIED — please check.
+# NOTE: this is a TRANSLATION, not a Persian edition. It is here in texts/ because, unlike the
+#   three prose translations in the reader, Rückert renders the poem couplet for couplet and so
+#   can be collated line by line.
+# NUMBERING is Rückert's own marginal couplet numbering, which is VULLERS' numbering:
+#   Sage I 54-74 (21 couplets) + Sage II 1-46 (46 couplets) = 67 couplets, corresponding
+#   one-to-one with texts/02-vullers.txt. Rückert's chapter divisions are Vullers' too, except
+#   that Vullers opens the Sadeh chapter at couplet 19 and so does Rückert.
+# FORMAT: one line per couplet, the two German verse lines separated by a tab, as elsewhere
+#   in this folder. Orthography, punctuation and elision apostrophes as printed;
+#   long ſ transcribed as s, ß kept, German quotation marks kept.
+
+## p.6
+### Hoscheng und Gajumarth ziehn gegen den schwarzen Dewen
+54	Sijamek der Held hinterließ einen Sohn,	Der war eine Stütz’ an des Ahnen Thron.
+55	Hoscheng, so war der edle genannt,	Der schien ganz Sinn zu sein und Verstand.
+56	Ein Pfand des Vaters dem Ahnen er blieb,	Der hegt’ am Busen ihn hold und lieb.
+57	An Statt eines Sohnes hielt er ihn,	Und wandte den Blick sonst auf keinen hin.
+58	Als nun auf Rach’ und Kampfgemeng	Sein Sinn stand, rief er dem edlen Hoscheng.
+59	Ihm sagt’ er all was zu sagen war,	Macht’ alles Geheimnis ihm offenbar:
+60	„Ein Heer stark erheben will ich nun,	Einen Kriegschrei geben will ich nun.
+61	Der Vormann mußt du sein ohn’ Scheu;	Denn ich bin abgängig, du bist neu.“
+62	Da schaart’ er Peri, Pardel und Leu,	Reißende Wölf’ und Tiger nicht scheu;
+
+## p.7
+63	Von Tier und Vogel und Peri ein Heer,	Mit Heerführer in kriegrischer Wehr;
+64	Im Rücken des Heers Schah Gajumarth war,	Sein Enkel vor ihm in Mitten der Schaar.
+65	Der schwarze Dewe kam schreckensvoll,	Der Staub gewirbelt zum Himmel schwoll.
+66	Vom Dröhnen der Tier’ erschlafften die Klaun	Des Dewen, da wo der Fürst war zu schaun.
+67	Es trafen die beiden Heere sich schon,	Und vor den Tieren die Dewen flohn.
+68	Die Hand schwang wie ein Löw Hoscheng,	Die Welt macht’ er dem Dewen eng.
+69	Er zog ihn von Kopf zu Fuß in den Riem,	Abschnitt er das Haupt ohn’ gleichen ihm;
+70	Warf ihn zu Boden und trat ihn kraus,	Sein Fell war zerrissen, mit ihm war’s aus.
+71	Als ihm nach Wunsch diese Rache gelang,	Lief ab Gajumarth’s Lebensgang.
+72	Er ging und die Welt ihn fahren ließ.	Sieh doch, wem sie je Huld bewies!
+73	Er häufte trügliche Welt zumal,	Ging nach Wucher, und genoß nicht das Kapital.
+74	Die Welt um und an ist wie Spreu im Sieb;	Ihr Gutes und Böses keinem verblieb.
+# ^ 21 couplets = the Kayumars portion. Matches Vullers 54-74 exactly.
+
+## p.9
+### II. Hoscheng
+1	Der Weltherr Hoscheng mit Sinn und Fug,	Anstatt des Ahnen die Kron’ er trug.
+2	Vierzig Jahr gingen über ihm hin,	Sein Herz war voll Huld, sein Hirn voll Sinn.
+3	Als auf dem Platze der Hoheit er saß,	Vom Thronsitz des Schahtums sprach er das:
+4	„In den vier Gaun bin ich Padischah,	Befehlend und siegreich fern und nah,
+5	Nach Gottes Befehl, der den Sieg verleiht,	Gegürtet zu Gnad’ und Gerechtigkeit.“
+6	Hierauf bracht’ er all die Welt in Bau,	Die Erde ganz voll Gnadenthau.
+7	Zuerst kam ein edler Stoff zur Hand,	Erz aus Gestein schied er mit Verstand.
+8	Zum Werkstoff glänzendes Erz er macht’,	Das er zog aus dem Felsenschacht.
+9	Er kannt’ es und fing die Schmiedekunst an,	Davon er Beil, Säg’, Axt gewann.
+10	Nach diesem vergabt’ er Wasserflut,	Die bracht’ er vom See dem Feld zu gut;
+11	Lenkte die Bäch’ in Strom und Sturz;	Seiner herrlichen Macht war die Arbeit kurz.
+12	Je mehr nun die Menschen lernten auch	Zu sän, zu pflanzen, zu ernten auch,
+13	Nährte sich jeder mit eigner Hand,	Bestellte sein Feld und merkte den Rand.
+
+## p.10
+14	Zuvor eh’ dieser Betrieb war versucht,	War keine Speis’ als nur Baumes Frucht;
+15	Noch ohn’ Ersprieß war Menschenbetrieb,	Nur sprießendes Laub ihre Kleidung blieb.
+16	Gottes Verehrung war schon zuvor;	Der Ahn’ einst frommen Brauch erkor.
+17	Wie Araber gegen den Stein sich kehren,	So kam jetzt das schöne Feuer zu Ehren.
+18	Das Feuer im Stein, draus hervor es kam,	Davon der Glanz die Welt einnahm.
+
+### Einsetzung des Festes der Feuer
+19	Der Schah der Welt ging zu einer Zeit	Ins Gebirge mit Volksgeleit.
+20	Von fern wies sich etwas schwarz und lang,	Von dunklem Leib und schnellem Gang,
+21	Zwei Augen im Kopf wie zwo Quellen Blut,	Ein Mund aushauchend finstre Glut.
+22	Hoscheng mit Hochsinn schaute den Dampf,	Ergriff einen Stein und schritt zum Kampf.
+23	Mit fürstlicher Kraft die Hand schwang er hoh,	Der Weltsenger Drach vorm Weltherrscher floh.
+24	Der kleine Stein traf auf großen Stein,	Und dieser und jener zerbrachen klein.
+25	Aus beiden Steinen kam ein Glanz,	Das Herz des Gesteins ward ein Feuerherd ganz.
+26	Die Schlange war nicht getötet, doch wach	Aus Stein des Feuers Geheimnis brach.
+27	Wo irgend Stahl nun schlägt auf Stein,	Da bricht hervor des Lichtes Schein.
+28	Der Weltherr vor dem, der die Welt erschuf,	Brachte Gebet dar und Dankes Ruf,
+29	Daß solcher Leitung Licht er gab;	Darauf das Feuer zur Richt’ er gab,
+
+## p.11
+30	Sprechend: „Ein Gottesglanz das ist,	Den bet’ an, wenn du weise bist.“
+31	Nachts schürt’ er ein Feuer bergeshoh,	Der Schah und das Volk umkreiste die Loh.
+32	Ein Fest war die Nacht durch, getrunken ward Wein:	Sede soll der Name des Festes sein.
+33	Sede blieb zu Hoscheng’s Angedenken;	Gott möge viel Fürsten gleich ihm uns schenken!
+34	Denn seine Lust war Anbau der Welt;	In gutem Gedächtnis die Welt ihn hält.
+35	In göttlichem Glanz und fürstlicher Macht	Drauf vom Wild und den Tieren der Jagd
+36	Sondert’ er Schaf und Esel und Rind,	Und brauchte zum Feldbau die nutzbar sind.
+37	Sprach Hoscheng der Weltfürst hoch und klar:	„Haltet sie einzeln Paar und Paar,
+38	Arbeitet mit ihnen, von ihnen lebt	Und nährt euch selbst, daß ihr Steuern gebt!“
+39	Von welchen Tieren das Haar ist nutz,	Die erlegt’ er und zog das Fell ab zum Putz,
+40	Als Marder und Fuchs, Hermelin zugleich,	Zum vierten Zobel von Haare weich.
+41	So mit den Fellen der Springenden	Schmückt’ er die Leiber der Singenden.
+42	So schenkt’ und lenkt’ er, genoß, und übergab,	Ging, und nahm nur den Ruhm mit zu Grab.
+43	Viel Mühen hatt’ er in seinen Tagen	Mit Kunstfleiß und tausend Gedanken getragen.
+44	Als ihm die bessern Tag’ erschienen,	Wollte der Thron ihm nicht länger dienen.
+45	Die Zeit keine Zeit zur Ruh’ ihm beschied,	Hoscheng der Schah voll Hochsinn schied.
+46	Die Welt hält dir stete Liebe nicht,	Und zeigt dir nie offen ihr Gesicht.
+# --- end of reading 1 in Rückert; Sage III, Tahmurath, follows ---
+# TOTAL: Sage I 54-74 (21 couplets) + Sage II 1-46 (46 couplets) = 67 couplets.

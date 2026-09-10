@@ -62,7 +62,7 @@ not been merged. See the README for which file is which and how to convert.
 matching: `ĵāme'e`, `ma'lum`. The only U+2019 in the repository is inside a
 Western-language book title in the bibliography (`Firdosil’s`, in
 `complete/introduction.txt` line 128 and `complete/shahnameh-complete.txt` line
-296), where it is correct typography and has been left alone.
+129), where it is correct typography and has been left alone.
 
 ## Reversibility
 
@@ -72,12 +72,17 @@ the plain-convention files every `h` is ҳ. Sequences that look like digraphs ar
 a consonant followed by the plural suffix ҳо: `baythāi` = байтҳои, `rūzhā` =
 рӯзҳо, `ranghā` = рангҳо.
 
-So converting a plain-convention file to `ḥ`/`ĵ` is a straight substitution with
-no exceptions to guard:
+So converting a plain-convention file to `ḥ`/`ĵ` is a straight substitution over
+the Tajik text:
 
 ```bash
-perl -CSD -Mutf8 -pe 'tr/hj/ḥĵ/' volumes/shahnameh-vol-1.txt
+perl -CSD -Mutf8 -pe 'tr/hj/ḥĵ/ unless /^%%/' volumes/shahnameh-vol-1.txt
 ```
+
+The one thing to guard is the `%%` volume marker, which is English: an
+unconditional `tr/hj/ḥĵ/` turns `%%Shahnameh part 1%%` into
+`%%Sḥaḥnameḥ part 1%%`. Skipping `%%` lines, as above, is enough — nothing else
+in the volume files is in Latin-alphabet Western text.
 
 The one thing that is *not* recoverable is capitalisation, which the source
 applied inconsistently to words beginning with а, қ and ғ. See the README.
