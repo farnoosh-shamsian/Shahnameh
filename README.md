@@ -5,11 +5,11 @@ The text includes aproximately the first half of Shahnameh, Corresponding to the
 
 ## Multitext viewer
 
-`multitext/reading-01/` holds a parallel-text reader for one passage of the Shahnameh —
-Pizzi's reading 1, Hushang — setting six printed editions, the Tajik transliteration in
-this repo and three nineteenth-century translations side by side, one couplet per row,
-with each witness switchable on and off as a column. It comes in two layouts of the same
-collation: `multitext/reading-01/index.html`, where the translations are columns beside
-the Persian, and `multitext/reading-01/index-bands.html`, where they run as bands between
+`multitext/` holds a parallel-text reader for one passage of the Shahnameh — Pizzi's
+reading 1, Hushang — setting six printed editions, the Tajik transliteration in this repo
+and three nineteenth-century translations side by side, one couplet per row, with each
+witness switchable on and off as a column. It comes in two layouts of the same collation:
+`multitext/shahnameh-reader-sample.html`, where the translations are columns beside the
+Persian, and `multitext/shahnameh-reader-sample2.html`, where they run as bands between
 the couplet rows. Open either in a browser; see the README beside them for what the
 columns are, how the alignment was made and how far the text can be trusted.

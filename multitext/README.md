@@ -11,8 +11,8 @@ of the Sadeh festival.
 
 The same collation is offered in **two layouts**:
 
-    index.html          translations as columns, beside the Persian
-    index-bands.html    translations as bands, running between the couplet rows
+    shahnameh-reader-sample.html    translations as columns, beside the Persian
+    shahnameh-reader-sample2.html   translations as bands, between the couplet rows
 
 The two pages are generated from one source and are **identical except in how the
 translations are presented**. Same header and counts, same toolbar, same column chooser,
@@ -92,8 +92,7 @@ the couplet number stays pinned to the left edge.
 rows that carry information; both hide the section headings and the dependency trees.
 *Show all* restores everything.
 
-**Treebank** shows or hides the dependency trees under couplets 1–5 — six trees under
-each, one per edition.
+**Treebank** shows or hides the dependency tree under couplets 1–5.
 
 **Normalised orthography / Orthography as printed** switches the Persian between the
 normalised spelling the collation is computed on and the spelling each edition actually
@@ -142,27 +141,20 @@ as-printed reading should go to those files rather than to the screen.
 
 ## The treebank
 
-Couplets 1–5 carry a Universal Dependencies annotation **in all six editions** — thirty
-sentences, 389 rows of lemma, POS, morphological features, head and relation. Each is
-drawn as arcs above the line, read right to left like the verse: each arc runs from head
-to dependent, the root is marked in gold, and the dashed rule divides the two hemistichs.
-Under each couplet the six editions are stacked in the table's own order, so a syntactic
-difference between editions can be read off directly.
+The tree under a couplet is **Pizzi's text**, one per couplet: the reading the collation
+is built around. It is a Universal Dependencies annotation with lemma, POS, morphological
+features, head and relation, drawn as arcs above the line and read right to left like the
+verse. Each arc runs from head to dependent, the root is marked in gold, and the dashed
+rule divides the two hemistichs.
 
-Couplet 1 is the clearest case. Pizzi and Moscow print `خجسته سیامک`, so the adjective is
-`amod` onto a *following* proper noun; Vullers, Mohl, Macan and Khaleghi print
-`سیامک خجسته` and the same arc runs the other way. Nothing else in the syntax moves. The
-one further difference in that couplet is lexical, not syntactic: Moscow reads `جاه`
-(rank) where the rest read `جای` (place), in the same `obj` slot.
+The annotation records what a parallel text alone cannot show. `نیایش` in couplet 4 is one
+written word but two syntactic ones (*niyā* + *-yaš*); such multiword tokens are listed in
+CoNLL-U but are not drawn, since the tree is over syntactic words. Couplet 3 is a verbless
+clause whose copula is elided.
 
-The annotation also records what a parallel text alone cannot show. `نیایش` in couplet 4
-is one written word but two syntactic ones (*niyā* + *-yaš*); such multiword tokens are
-listed in CoNLL-U but are not drawn, since the tree is over syntactic words. Couplet 3 is
-a verbless clause whose copula is elided.
-
-**Only couplets 1–5 are annotated.** The remaining 71 rows have no tree in any edition.
-The underlying tables are `07-ud-pizzi-c1-5.csv` and `08-ud-all-editions-c1-5.csv` in the
-project archive; the SVGs in these pages are rendered from the second of them.
+**Only couplets 1–5 are annotated so far.** Pizzi has 68 couplets in this reading, so 63
+of them still have no tree. The annotation lives in `07-ud-pizzi-c1-5.csv` in the project
+archive, from which the SVGs on these pages are rendered.
 
 ## How the translations are placed
 
@@ -181,9 +173,10 @@ A faint, empty translation cell means the prose did not break at that couplet, n
 the translator omitted anything. For the unsplit prose, open *Whole section in
 translation* in the section heading.
 
-This placement is the same on both pages; only its presentation differs. In `index.html`
-each translation is a column of its own, so the three run in parallel and are read down.
-In `index-bands.html` they are bands laid across the full width between the couplet rows,
+This placement is the same on both pages; only its presentation differs. In
+`shahnameh-reader-sample.html` each translation is a column of its own, so the three run in
+parallel and are read down. In `shahnameh-reader-sample2.html` they are bands laid across the
+full width between the couplet rows,
 which gives the prose its natural line length at the cost of reading them one after
 another rather than side by side.
 
@@ -260,10 +253,10 @@ on a consonant skeleton.
 
 ## Files
 
-    index.html          the viewer, translations as columns
-    index-bands.html    the viewer, translations as bands
-    images/             11 manuscript images from Ganjoor, shared by both pages
-    README.md           this file
+    shahnameh-reader-sample.html    the viewer, translations as columns
+    shahnameh-reader-sample2.html   the viewer, translations as bands
+    images/                         11 manuscript images from Ganjoor, shared by both
+    README.md                       this file
 
 The two pages differ only in the translation layout; everything else in them is generated
 once and shared.
