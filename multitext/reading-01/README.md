@@ -9,8 +9,13 @@ The passage is **Pizzi's reading 1 — Hushang**, 68 couplets in Pizzi's count, 
 Kayumars, the killing of the Black Div, the discovery of iron and fire, and the founding
 of the Sadeh festival.
 
-Open `index.html` in a browser. No build step, no server, no dependencies beyond two
-webfonts.
+The same collation is offered in **two layouts**, and the two pages are otherwise
+identical in content:
+
+    index.html          translations as columns, beside the Persian
+    index-bands.html    translations as bands, running between the couplet rows
+
+Open either in a browser. No build step, no server, no dependencies beyond two webfonts.
 
 ---
 
@@ -136,6 +141,12 @@ A faint, empty translation cell means the prose did not break at that couplet, n
 the translator omitted anything. For the unsplit prose, open *Whole section in
 translation* in the section heading.
 
+This placement is the same on both pages; only its presentation differs. In `index.html`
+each translation is a column of its own, so the three run in parallel and are read down.
+In `index-bands.html` they are bands laid across the full width between the couplet rows,
+which gives the prose its natural line length at the cost of reading them one after
+another rather than side by side.
+
 ## Where the editions disagree
 
 ### Why Pizzi has 68 couplets and Vullers 67
@@ -184,11 +195,9 @@ is the Moscow edition.
 
 ## Manuscript witnesses
 
-Below the table are the twelve images Ganjoor attaches to this passage
-([ganjoor.net/ferdousi/shahname/qmars/sh2](https://ganjoor.net/ferdousi/shahname/qmars/sh2)).
-The first is not a manuscript but the Moscow printed page underlying the Ganjoor text —
-Moscow vol. 1, pdf page 32 = printed p. 31, exactly where this reading begins. The rest
-are manuscript leaves, several illustrating the moment Hushang kills the Black Div.
+Below the table are the manuscript leaves Ganjoor attaches to this passage
+([ganjoor.net/ferdousi/shahname/qmars/sh2](https://ganjoor.net/ferdousi/shahname/qmars/sh2)),
+several of them illustrating the moment Hushang kills the Black Div.
 
 ## How the alignment was made
 
@@ -200,9 +209,10 @@ on a consonant skeleton.
 
 ## Files
 
-    index.html      the viewer — one self-contained page
-    images/         12 gallery images from Ganjoor
-    README.md       this file
+    index.html          the viewer, translations as columns
+    index-bands.html    the viewer, translations as bands
+    images/             11 manuscript images from Ganjoor, shared by both pages
+    README.md           this file
 
 The working data behind the page — the per-edition couplets, the 76 aligned slots, the
 transposition pairs, the transliteration alignment and the treebank — is not in this
