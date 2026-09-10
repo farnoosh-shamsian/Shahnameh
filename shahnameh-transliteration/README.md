@@ -92,9 +92,8 @@ including proper names — `rustam`, `firdavsī`, `kayqubād` — but words begi
 with а/қ/ғ carry a capital in some places and not others, because the Cyrillic
 source capitalised them and the transliteration preserved that. Across the six
 volumes `az` appears 1,732 times and `Az` 259 times; `andar` 209 times and
-`Andar` 8. Genuine proper
-names in the same position, such as `Afrāsiýāb` and `Aynī`, are capitalised
-consistently and correctly.
+`Andar` 8. Genuine proper names in the same position, such as `Afrāsiýāb` and
+`Aynī`, are capitalised consistently and correctly.
 
 This has not been normalised, because doing it properly means separating names
 from function words rather than lowercasing everything. **Fold case when

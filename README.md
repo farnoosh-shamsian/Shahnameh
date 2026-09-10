@@ -21,10 +21,12 @@ two spelling conventions that were deliberately not merged, and the known issues
 ## `multitext/`
 
 A parallel-text reader for one passage — Pizzi's reading 1, Hushang, 68 couplets
-— setting six printed Persian editions, the transliteration above and three
+— setting six printed Persian editions, the transliteration above and four
 nineteenth- and early-twentieth-century translations side by side, one couplet
-per row, with each edition switchable on and off. Two layouts of the same
-collation: [`shahnameh-reader-sample.html`](multitext/shahnameh-reader-sample.html),
+per row, with each edition switchable on and off. Three of the four translations
+are prose and are placed by section; Rückert's German verse is aligned couplet by
+couplet. Two layouts of the same collation:
+[`shahnameh-reader-sample.html`](multitext/shahnameh-reader-sample.html),
 where the translations are columns beside the Persian, and
 [`shahnameh-reader-sample2.html`](multitext/shahnameh-reader-sample2.html), where
 they run as bands between the couplet rows. Open either in a browser.
