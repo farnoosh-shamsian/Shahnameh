@@ -219,9 +219,8 @@ tr.row.flash td{animation:rowflash 1.7s ease-out}
 @keyframes rowflash{0%,35%{background-color:var(--saffron-soft)}100%{background-color:transparent}}
 </style>
 <style>
-table.coll .st{display:none}
-table.coll.std .ap{display:none}
-table.coll.std .st{display:block}
+table.coll .ap{display:none}
+table.coll .st{display:block}
 td.v.lat{direction:ltr;text-align:left;font-family:Spectral,Georgia,serif;font-size:15px;
   line-height:1.85;font-style:italic;color:var(--ink-2)}
 td.v.lat .h+.h{color:var(--ink-3)}
@@ -339,7 +338,6 @@ thead th:first-child{left:0;z-index:36}
 <span class="sp"></span>
 <button class="t" id="tra" aria-pressed="true">Translations</button>
 <button class="t" id="tbk" aria-pressed="true">Treebank</button>
-<button class="t" id="ortho" aria-pressed="true">Normalised orthography</button>
 <span class="sp"></span>
 <button class="t" id="thm" type="button">Light theme</button>
 </div>
@@ -365,7 +363,7 @@ thead th:first-child{left:0;z-index:36}
 </div>
 <div class="bar2"><span class="legend"><i><span class="sw void"></span>couplet absent</i><i><span class="sw mk"></span>wording differs</i><i><span class="sw un"></span>only one edition</i><i><span class="sw" style="background:var(--saffron)"></span>&#8645; transposed</i><i><span class="sw" style="background:var(--lapis-soft);border-color:var(--lapis)"></span>translation band</i><i><span class="sw" style="background:var(--sunk);border-color:var(--saffron)"></span>dependency tree</i></span></div>
 </div>
-<div class="scroller"><table class="coll std" id="tbl"><thead><tr>
+<div class="scroller"><table class="coll" id="tbl"><thead><tr>
 <th scope="col" style="width:54px"><span class="sig">#</span><span class="srcline">couplet</span></th>
 <th data-c="pi" scope="col"><span class="sig">Pizzi<span class="abbr">Pi</span></span><span class="srcline">Manuale della lingua persiana, 1883</span><span class="pgline">pp. 58–63</span></th>
 <th data-c="vu" scope="col"><span class="sig">Vullers<span class="abbr">Vu</span></span><span class="srcline">Liber regum, Leiden 1877–84</span><span class="pgline">vol. 1, pp. 16–20</span></th>
@@ -1303,15 +1301,6 @@ thead th:first-child{left:0;z-index:36}
     kb.setAttribute('aria-pressed',String(kb.getAttribute('aria-pressed')!=='true'));apply();});
   if(tra)tra.addEventListener('click',function(){
     tra.setAttribute('aria-pressed',String(tra.getAttribute('aria-pressed')!=='true'));apply();});
-
-  /* ---- orthography as printed, or normalised ---- */
-  var ob=document.getElementById('ortho');
-  ob.addEventListener('click',function(){
-    var on=ob.getAttribute('aria-pressed')==='true';
-    ob.setAttribute('aria-pressed',String(!on));
-    tbl.classList.toggle('std',!on);
-    ob.textContent = !on ? 'Normalised orthography' : 'Orthography as printed';
-  });
 
   /* ---- light / dark ---- */
   var thm=document.getElementById('thm');

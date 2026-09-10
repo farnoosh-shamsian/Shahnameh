@@ -13,3 +13,7 @@ witness switchable on and off as a column. It comes in two layouts of the same c
 Persian, and `multitext/shahnameh-reader-sample2.html`, where they run as bands between
 the couplet rows. Open either in a browser; see the README beside them for what the
 columns are, how the alignment was made and how far the text can be trusted.
+
+---
+
+*This work was prepared with the assistance of Claude Opus 5, run at high reasoning effort.*
