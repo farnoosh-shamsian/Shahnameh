@@ -88,8 +88,21 @@ rows that carry information; both hide the section headings and the dependency t
 
 **Treebank** shows or hides the dependency trees under couplets 1–5.
 
+**Light theme / Dark theme** switches the page between the two, whichever way your system
+is set; the choice is remembered in that browser between visits.
+
 **Whole section in translation**, in each section heading, opens the three translations of
 that whole section as continuous prose, unsplit.
+
+**The manuscript leaves open on the page.** The gallery thumbnails are cropped; clicking
+one enlarges the whole leaf over the table, with its caption, arrows to the next and
+previous leaf and a link out to the item at Ganjoor for anyone who wants the full record.
+Esc, the ×, or a click on the backdrop closes it; the arrow keys move between leaves.
+Nothing navigates away from the page.
+
+**A hatched cell is not always an absence.** Where a couplet stands in a different place in
+some edition, the cell reads *transposed — Pizzi has it at row 32* rather than *not in
+Pizzi*, and the row number links to the other half of the block. See below.
 
 ## Orthography is not a variant
 
@@ -172,6 +185,16 @@ The Tajik transliteration is Moscow-family but does **not** follow Moscow here: 
 the block in the vulgate position and carries the vulgate wording *kujā z-ū tabar* against
 Moscow's `از آهنگری اره و تیشه کرد`. Rows 59–63 are therefore blank in its column.
 
+### Transposition is marked as transposition, not as absence
+
+The two halves of a transposed block — rows 21 and 23, rows 32–36 and 59–63 — would
+otherwise read as forty-two separate absences, as though most editions simply lacked the
+couplet. They do not: they have it a few rows away. Each of those forty-two cells therefore
+names the edition and the row where that edition does print the couplet, in the saffron of
+the ⇅ transposition mark, and links to it; clicking lifts any filter that is hiding the
+target and takes you there. A cell that stays grey and reads *not in Khaleghi* is a real
+absence.
+
 ## How far to trust the text
 
 Pizzi and Moscow/Ganjoor are existing digital transcriptions; the transliteration is from
@@ -197,7 +220,8 @@ is the Moscow edition.
 
 Below the table are the manuscript leaves Ganjoor attaches to this passage
 ([ganjoor.net/ferdousi/shahname/qmars/sh2](https://ganjoor.net/ferdousi/shahname/qmars/sh2)),
-several of them illustrating the moment Hushang kills the Black Div.
+several of them illustrating the moment Hushang kills the Black Div. The thumbnails are
+cropped to the head of the leaf; click one to see the whole page on this page.
 
 ## How the alignment was made
 
