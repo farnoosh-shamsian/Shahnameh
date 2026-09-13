@@ -1,0 +1,18 @@
+
+# All scanned page facsimiles (~900 MB across 30 files)
+*.pdf
+
+# Moscow edition RTF — 109 MB, over GitHub's hard 100 MB file limit. The same text is tracked as .doc / .txt in the same folder.
+editions/moscow/شاهنامه فردوسی چاپ مسکو.rtf
+
+# ---------------------------------------------------------------
+# Editor / OS noise
+# ---------------------------------------------------------------
+~$*
+*~
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc
