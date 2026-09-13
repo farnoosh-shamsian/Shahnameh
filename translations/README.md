@@ -4,7 +4,7 @@ Translations of the _Shahnameh_ in four languages, plus the scans and OCR they
 derive from. This file records where each item came from and what, if
 anything, has been changed here.
 
-## Acknowledgement: Gregory Crane
+## Acknowledgement:
 
 **Every XML text in this folder originates in Gregory Crane's Shahnameh
 project: <https://github.com/gregorycrane/Shahnameh>**
@@ -73,12 +73,11 @@ alignable.
 
 Friedrich Rückert's German verse translation.
 
-| File                       | What it is                                             |
-| -------------------------- | ------------------------------------------------------ |
-| `Rückert_searchable.pdf`   | Same scan with an OCR text layer (368 MB, not tracked) |
-| `Rückert_OCR.txt`          | Raw OCR text as the engine produced it (774 KB)        |
-| `Rückert_OCR_clean.txt`    | The same text with Fraktur artifacts normalised        |
-| `Rückert_OCR_suspects.tsv` | 916 flagged probable misreads, for review              |
+| File                     | What it is                                             |
+| ------------------------ | ------------------------------------------------------ |
+| `Rückert_searchable.pdf` | Same scan with an OCR text layer (368 MB, not tracked) |
+| `Rückert_OCR.txt`        | Raw OCR text as the engine produced it (774 KB)        |
+| `Rückert_OCR_clean.txt`  | The same text with Fraktur artifacts normalised        |
 
 OCR'd for this project from a 500-page scan held by Universitäts- und
 Landesbibliothek Sachsen-Anhalt, set in Fraktur. Tesseract 5.4 with the
@@ -94,15 +93,6 @@ the engine sometimes repeats the ligature's trailing letter, so both `ſi<h` and
 `ſi<` mean _sich_. **21,000 substitutions** — long-s `ſ` → `s` (17,095),
 `<` → `ch` (538), `>` → `ck` (820), plus stray rule-marks and margin speckles
 (~3,800). Nothing was changed beyond these character rules.
-
-**Flagging.** `Rückert_OCR_suspects.tsv` lists probable misreads with a
-suggested reading, page number and line context. Nothing is applied; it is a
-review list. Candidates are found corpus-internally — a rare word one edit away
-from a much more frequent one — which is what catches the proper-name variants
-(`Afrasiaf` → `Afrasiab`) that no German dictionary knows. A hunspell `de_DE`
-lookup then vetoes any candidate that is itself real German, without which
-roughly half the hits are ordinary words (`Fels`, `Braust`, `Eber`) or
-Rückert's metrical elisions (`Feu'r`). 377 high, 389 medium, 150 low.
 
 **Status: partly corrected.** The character-level artifacts are resolved. Two
 classes remain: the ~10% of high-confidence flags that are archaic forms rather
@@ -129,3 +119,5 @@ plain-text version.
 ## Licensing
 
 CC-BY-SA
+
+Work partly assisted by Claude Opus 5.
