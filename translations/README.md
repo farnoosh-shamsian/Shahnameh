@@ -69,15 +69,18 @@ alignable.
 
 **Added here:** nothing yet but kept so the repo has everything in one place for further work.
 
-## rückert/
+## rückert-german/
 
 Friedrich Rückert's German verse translation.
 
-| File                     | What it is                                             |
-| ------------------------ | ------------------------------------------------------ |
-| `Rückert_searchable.pdf` | Same scan with an OCR text layer (368 MB, not tracked) |
-| `Rückert_OCR.txt`        | Raw OCR text as the engine produced it (774 KB)        |
-| `Rückert_OCR_clean.txt`  | The same text with Fraktur artifacts normalised        |
+| File                        | What it is                                              |
+| --------------------------- | ------------------------------------------------------- |
+| `Rückert_searchable.pdf`    | Same scan with an OCR text layer (368 MB, not tracked)  |
+| `Rückert_OCR.txt`           | Raw OCR text as the engine produced it (774 KB)         |
+| `Rückert_OCR_1stclean.txt`  | First normalisation pass, superseded                    |
+| `Rückert_OCR_corrected.txt` | **Current text** — normalised and corrected             |
+| `Rückert_OCR_changes.tsv`   | Every substitution made against the page image          |
+| `Rückert_OCR_resolved.tsv`  | All 916 flagged words with their verdict                |
 
 OCR'd for this project from a 500-page scan held by Universitäts- und
 Landesbibliothek Sachsen-Anhalt, set in Fraktur. Tesseract 5.4 with the
@@ -87,18 +90,33 @@ blackletter far worse, misreading even `Zal` as `Bal`.
 The searchable PDF exceeds GitHub's 100 MB file limit and is covered by the
 `*.pdf` rule in `.gitignore`, as the other scans are.
 
-**Normalisation.** Tesseract emits Fraktur ligature glyphs literally, which is
-mechanical to reverse: `<` is the _ch_ ligature and `>` the _ck_ ligature, and
-the engine sometimes repeats the ligature's trailing letter, so both `ſi<h` and
-`ſi<` mean _sich_. **21,000 substitutions** — long-s `ſ` → `s` (17,095),
-`<` → `ch` (538), `>` → `ck` (820), plus stray rule-marks and margin speckles
-(~3,800). Nothing was changed beyond these character rules.
+**Normalisation.** The engine transcribes Fraktur ligatures as punctuation —
+`<` for _ch_, `>` for _ck_, `{` for _sch_, `*` for an elision apostrophe — and
+sometimes repeats the ligature's trailing letter, so both `ſi<h` and `ſi<` mean
+_sich_. Three further classes leave no marker at all and need the dictionary to
+adjudicate: the _c_ of a ch-ligature is dropped outright (`niht` → _nicht_,
+`sprah` → _sprach_), the tz-ligature is read as ß (`jeßt` → _jetzt_), and
+Fraktur capital I is read as J (`Jran` → _Iran_, 136 times). Each repair is
+applied only when the dictionary accepts it and rejects the original, which is
+what leaves genuine pre-reform spellings alone — `Roß`, `laß` and `Schuß` stay
+put, because they are still German once ß is read as ss, while real J-words
+(`ja`, `Jahr`, `jung`) never match. Together with long-s `ſ` → `s`, this
+repairs **30,314 of 130,423 word tokens**, about 23% of the text.
 
-**Status: partly corrected.** The character-level artifacts are resolved. Two
-classes remain: the ~10% of high-confidence flags that are archaic forms rather
-than errors (`dieß`, `eignes`), and real-word errors, which this method cannot
-see by construction — where the scan misread `Blut` as `Baut`, both are valid
-German. Those need proofreading against the page images.
+**Correction.** Beyond the mechanical classes, 916 words were flagged as
+probable misreads and each was checked against its own page image: the printed
+line was cropped, upscaled and re-read three ways, with a word accepted only
+when the reads agreed and the result was a word the corpus or German knows.
+272 flags turned out to be false alarms, and 170 substitutions were applied —
+35 of them read off the scan by eye where the automated reads disagreed.
+`Rückert_OCR_changes.tsv` records every one.
+
+**Status: corrected, not proofread.** 419 flags were left unresolved rather
+than guessed, mostly in the editor's front matter and endnotes — apparatus that
+quotes Homer in Greek, Mohl in French and Persian in transliteration, none of
+which a Fraktur model can read. Real-word errors remain invisible to this
+method by construction: where the scan misread `Blut` as `Baut`, both are valid
+German. A full proofread against the page images is still outstanding.
 
 ## atkinson-abridgement/
 
