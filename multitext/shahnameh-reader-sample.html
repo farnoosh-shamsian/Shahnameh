@@ -64,14 +64,13 @@ h1 em{font-style:italic;color:var(--lapis)}
 .standfirst .fa{font-family:"Noto Naskh Arabic",serif;direction:rtl;unicode-bidi:isolate;
   font-size:17px;color:var(--ink)}
 
-.counts{display:flex;flex-wrap:wrap;margin:28px 0 0;border:1px solid var(--rule);
-  border-radius:3px;overflow:hidden;background:var(--panel)}
-.counts div{flex:1 1 128px;padding:13px 16px;border-inline-end:1px solid var(--rule-2)}
-.counts div:last-child{border-inline-end:0}
-.counts .n{font-family:Spectral,serif;font-size:27px;font-weight:500;
-  font-variant-numeric:tabular-nums;line-height:1;display:block}
-.counts .l{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);
-  margin-top:7px;display:block}
+.guide{margin:26px 0 0;max-width:72ch;font-family:Spectral,Georgia,serif;font-size:16px;
+  line-height:1.62;color:var(--ink-2);font-weight:300}
+.guide p{margin:0 0 12px}
+.guide p:last-child{margin-bottom:0}
+.guide b{font-weight:600;color:var(--ink)}
+.guide .caution{border-inline-start:3px solid var(--saffron);background:var(--panel);
+  padding:10px 14px;border-radius:0 3px 3px 0}
 
 .bar{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--rule);
   padding:11px 0;margin-top:28px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
@@ -323,17 +322,12 @@ thead th:first-child{left:0;z-index:36}
 <p class="eyebrow">Prototype &middot; Reading 1 &middot; Hushang</p>
 <h1>A Shahnameh <em>multitext</em></h1>
 <p class="fa-title">&#1588;&#1575;&#1607;&#1606;&#1575;&#1605;&#1607; &mdash; &#1605;&#1578;&#1606; &#1670;&#1606;&#1583;&#1711;&#1575;&#1606;&#1607;</p>
-<div class="counts">
-<div><span class="n">76</span><span class="l">distinct couplets</span></div>
-<div><span class="n">6</span><span class="l">Persian editions</span></div>
-<div><span class="n">4</span><span class="l">translations</span></div>
-<div><span class="n">38</span><span class="l">rows with a gap</span></div>
-<div><span class="n">43</span><span class="l">rows differing</span></div>
-<div><span class="n">8</span><span class="l">in one edition only</span></div>
-<div><span class="n">45</span><span class="l">in Khaleghi</span></div>
-<div><span class="n">172</span><span class="l">translation chunks</span></div>
+<div class="guide">
+<p>This visualization is a working prototype for the <b>Digital Shahnameh</b> project. It sets out the <b>first reading in Italo Pizzi&rsquo;s <i>Manuale della lingua persiana</i></b> (Turin, 1883) &mdash; the story of Hushang &mdash; across six printed editions, a vocalised Tajik transliteration and four translations, in Italian, English, French and German. A hatched, empty cell means that edition does not have the couplet; highlighted words are where its wording differs from the other editions in the row; &#8645; marks a couplet an edition places elsewhere. Much of this still needs work &mdash; above all how the translations are aligned with the couplets and how they are shown &mdash; and may be worked out differently in the eventual dataset.</p>
+<p><b>Exploring it.</b> The bar below narrows the table to <i>rows with a gap</i> or <i>rows that differ</i>. The chips switch each edition, the transliteration and each translation on or off, so any two or three can be read side by side; the page remembers your choice. <i>Treebank</i> shows or hides the dependency trees for couplets 1&ndash;5, and <i>Whole section in translation</i> under each section heading gives the translations as running text. Manuscript images from Ganjoor are at the foot of the page.</p>
+<p>We are still experimenting with how to show the translations: <a href="shahnameh-reader-sample2.html">another prototype</a> runs them in bands beneath the couplets they render, instead of as columns.</p>
+<p class="caution"><b>A prototype, so expect errors.</b> Much of the text is OCR output with LLM correction and may contain many mistakes; in the project&rsquo;s final editions it will be corrected by hand.</p>
 </div>
-<p class="viewnav">Two layouts of the same collation: <b>translations as columns</b> (this page) &middot; <a href="shahnameh-reader-sample2.html">translations as bands</a></p>
 </header>
 <div class="stickytop">
 <div class="bar">
